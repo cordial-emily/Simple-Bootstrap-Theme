@@ -48,7 +48,7 @@
 <footer id="footer">
   <div class="row">
     <div class="col-lg-12">
-      <p class="text-center" style="position:relative;display: block;padding: 10px 15px;">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?></li></p>
+      <p class="text-center" style="position:relative;display: block;padding: 15px 15px 10px;">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?></li></p>
     </div>
  </div>
 
