@@ -200,7 +200,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding-bottom: 20px;
 }
 .navbar-nav li a {
-    /*color: #CCC;*/
     color: #A70B0B;
     font-family: 'Lato', sans-serif;
 }
@@ -277,6 +276,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   height:100px;
   width: 100%;
 }
+/* footer */
+footer#footer { background-color:#777; }
+footer#footer .row p.text-center { color: #fff; }
 
 /*--- cv education section ------------*/
 .container.bea_border.cv .port-img { width: 80%;}

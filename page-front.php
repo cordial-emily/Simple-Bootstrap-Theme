@@ -40,7 +40,7 @@
                 <span class="dashicons dashicons-location-alt fp-icons"></span>
                 <h2 style="padding-bottom:10px">Consider your strategy.</h2>
                 <p><ul>
-                    <li>Nest steps: blog, app, or email accounts.</li>
+                    <li>Next steps: blog, app, or email accounts.</li>
                 </ul></p>
 
                     <!--https://developer.wordpress.org/resource/dashicons/#clock-->
