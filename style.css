@@ -181,15 +181,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-top: 20px;
     padding-left: 20px;
 }
-.middle .container .focuslist ul {
+h2.middletitle { padding-bottom:10px;text-align:center; }
+.middle .container .focuslist p {
     font-size: 1.5em;
     font-family: sans-serif;
     font-weight: 100;
     line-height: 1.75;
     list-style: none;
     letter-spacing:1px;
+    text-align: center;
 }
-.middle .container .col-md-4 ul li::first-letter {
+.middle .container .col-md-4 p::first-letter {
     font-size:120%;
     color:#c04d4a;
 }

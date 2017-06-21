@@ -25,10 +25,8 @@
             <div class="col-md-4 content focuslist">
               <div class="box_info row">
                     <span class="dashicons dashicons-networking fp-icons"></span>
-                    <h2 style="padding-bottom:10px">What is your vision?</h2>
-                    <p><ul>
-                        <li>We'll help you build it.</li>
-                      </ul>
+                    <h2 class="middletitle">What is your vision?</h2>
+                    <p>We'll help you build it.
                     </p>
 
 
@@ -38,10 +36,8 @@
             <div class="col-md-4 content focuslist">
               <div class="box_info">
                 <span class="dashicons dashicons-location-alt fp-icons"></span>
-                <h2 style="padding-bottom:10px">Consider your strategy.</h2>
-                <p><ul>
-                    <li>Next steps: blog, app, or email accounts.</li>
-                </ul></p>
+                <h2 class="middletitle">Consider your strategy.</h2>
+                <p>Next steps: blog, app, or email accounts.</p>
 
                     <!--https://developer.wordpress.org/resource/dashicons/#clock-->
 
@@ -52,10 +48,8 @@
             <div class="col-md-4 content focuslist">
               <div class="box_info">
                 <span class="dashicons dashicons-groups fp-icons"></span>
-                <h2 style="padding-bottom:10px">Plan for the future.</h2>
-                <p><ul>
-                    <li>By setting up SEO and social media.</li>
-                </ul></p>
+                <h2 class="middletitle">Plan for the future.</h2>
+                <p>Get your social media and SEO results.</p>
 
               </div><!--box_info-->
             </div><!--col-md-4 content-->
