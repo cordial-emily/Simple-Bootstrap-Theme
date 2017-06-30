@@ -58,4 +58,18 @@ add_action('wp_enqueue_scripts', 'simple_bootstrap_scripts');
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
-/* ------  ---------*/
+/* ------ register widget areas ---------*/
+
+function simple_bootstrap_widget_init() {
+  register_sidebar( array(
+    'name' => __('Main Sidebar', 'simple_bootstrap'),
+    'id' => 'main-sidebar',
+    'description' => __('Widgets added here will appear in all pages using the template Two Column Template', 'simple_bootstrap'),
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>',
+    'before_title' => '<h2 class="widget-title">',
+    'after-title' => '</h2>'
+  ));
+}
+
+add_action ('widgets_init', 'simple_bootstrap_widget_init');
