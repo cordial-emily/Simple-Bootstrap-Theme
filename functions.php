@@ -73,3 +73,20 @@ function simple_bootstrap_widget_init() {
 }
 
 add_action ('widgets_init', 'simple_bootstrap_widget_init');
+
+/* Adding a custom post type  */
+
+function create_posttype() {
+  register_post_type ( 'slides',
+    array(
+      'labels' => array(
+          'name' => __('Slides'),
+          'singular_name' => __('Slide')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'movies'),
+    )
+  );
+}
+add_action( 'init', 'create_posttype' );
