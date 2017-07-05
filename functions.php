@@ -11,8 +11,6 @@ add_action('after_setup_theme', 'simple_bootstrap_setup');
 
 /*------ Register Menus --------- */
 
-//add_action('init', 'register_simplebootstrap_menus');
-
 function register_simplebootstrap_menus() {
     register_nav_menus(
         array(
@@ -26,8 +24,6 @@ function register_simplebootstrap_menus() {
 add_action('init', 'register_simplebootstrap_menus');
 
 
-
-
 /********************************************************/
 // Adding Dashicons in WordPress Front-end
 /********************************************************/
@@ -36,7 +32,8 @@ function load_dashicons_front_end() {
   wp_enqueue_style( 'dashicons' );
 }
 
-
+/* -------- Enabling Support for Post Thumbnails ----------*/
+add_theme_support( 'post-thumbnails' );
 
 /*------ Add Stylesheets --------- */
 
@@ -86,6 +83,7 @@ function create_posttype() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array( 'slug' => 'movies'),
+      'supports' => array('title', 'thumbnail')
     )
   );
 }
