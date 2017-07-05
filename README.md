@@ -12,3 +12,5 @@
 
     * Top (header.php)
     * Bottom (footer.php)
+
++ Modal pop-ups when you click on thumbnails with unique content per each thumbnail. (See 'Portfolio template')
