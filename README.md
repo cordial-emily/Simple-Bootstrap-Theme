@@ -6,4 +6,4 @@
 
 + A custom carousel / slider (uses some code from Ezer Sanbe's 'Integrating the Bootstrap Carousel into the WordPress theme')
 
-+ A 3 column responsive right-side Sidebar for the template 'Two-Column'
++ A responsive right-side Sidebar for the template 'Two-Column'
