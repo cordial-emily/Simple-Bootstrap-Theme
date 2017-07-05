@@ -36,9 +36,9 @@
               <br>
               </br>
               <h3>Contact us</h3>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="mailto:cordial.emily@gmail.com?Subject=Hello%20ParallelDesign" target="_top">Email</a></li>
-                <li><p><a href="https://twitter.com/cordial_emily">
+              <ul class="nav nav-pills nav-stacked social">
+                <li><p><a href="mailto:cordial.emily@gmail.com?Subject=Hello%20ParallelDesign" target="_top"><span class="dashicons dashicons-email-alt"></span></a></p></li>
+                <li><p><a href="https://twitter.com/cordial_emily"></a></p></li>
               </ul>
               <br>
               </br>

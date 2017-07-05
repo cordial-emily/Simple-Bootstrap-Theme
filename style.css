@@ -85,9 +85,10 @@ h1, h2, h3, h4, h5{
 p {
     font-family: 'Lato', sans-serif;
 }
-body {
-}
 .btn { background-color: #009b9b; color:#fdfefe; }
+.bs-docs-featurette.main-content-width-wrapper {
+    background-color: #ded5c5;
+}
 
 /* ---------- navigation -----------*/
 .top { background-color: #ffffff; }
