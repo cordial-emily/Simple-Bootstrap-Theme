@@ -34,10 +34,12 @@
                  <span class="glyphicon glyphicon-align-justify"></span>
              </button>
              <div class="navbar-collapse collapse" role="navigation">
-                 <?php wp_nav_menu( $args = array(
-                   'menu_class' => 'navbar-nav nav',
-                   'theme_location' => 'primary'
-                 )); ?>
+
+                 <?php wp_nav_menu( array(
+                  'theme_location' 	  => 'primary',
+                  'container' 		    => 'ul',
+                  'menu_class'      	=> 'navbar-nav nav'
+                  )); ?>
 
              </div>
          </div>
