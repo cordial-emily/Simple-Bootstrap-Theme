@@ -53,7 +53,7 @@ function simple_bootstrap_scripts() {
 }
 add_action('wp_enqueue_scripts', 'simple_bootstrap_scripts');
 // Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
+require_once('WP_Bootstrap_Navwalker.php');
 
 /* ------ register widget areas ---------*/
 
