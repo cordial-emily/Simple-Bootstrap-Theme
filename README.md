@@ -17,6 +17,8 @@
 
 + 5 custom template pages.
 
++ Note: This is based on Bootstrap 3. Give responsive images the class: img-fluid.
+
 ### Set Up
 
 + Upload this WordPress theme and activate it.
