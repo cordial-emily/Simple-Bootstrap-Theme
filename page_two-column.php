@@ -33,7 +33,7 @@
       <hr class="half-rule">
       <p class="lead">Bootstrap is open source. It's hosted, developed, and maintained on GitHub.</p> <a href="https://github.com/twbs/bootstrap" class="btn btn-outline btn-lg">View the GitHub project</a> </div>
     </div>
-    <?php get_sidebar("main-sidebar"); ?>
+
   </div>
 
 <?php get_footer(); ?>

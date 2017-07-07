@@ -71,7 +71,7 @@ function simple_bootstrap_widget_init() {
 
 add_action ('widgets_init', 'simple_bootstrap_widget_init');
 
-/* Adding a custom post type  */
+/* Adding a custom post type for slider  */
 
 function create_posttype() {
   register_post_type ( 'slides',
@@ -82,7 +82,19 @@ function create_posttype() {
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array( 'slug' => 'movies'),
+      'rewrite' => array( 'slug' => 'slides'),
+      'supports' => array('title', 'thumbnail')
+    )
+  );
+  register_post_type ( 'logos',
+    array(
+      'labels' => array(
+          'name' => __('Logo'),
+          'singular_name' => __('LogoImage')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'logos'),
       'supports' => array('title', 'thumbnail')
     )
   );

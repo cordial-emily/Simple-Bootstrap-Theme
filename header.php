@@ -30,17 +30,24 @@
  <!-- Site header and navigation -->
      <header class="top" role="header">
          <div class="container">
-             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                 <span class="glyphicon glyphicon-align-justify"></span>
-             </button>
-             <div class="navbar-collapse collapse" role="navigation">
 
-                 <?php wp_nav_menu( array(
-                  'theme_location' 	  => 'primary',
-                  'container' 		    => 'ul',
-                  'menu_class'      	=> 'navbar-nav nav'
-                  )); ?>
 
-             </div>
+                 <?php get_template_part( 'logo'); ?>
+
+
+
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="glyphicon glyphicon-align-justify"></span>
+               </button>
+               <div class="navbar-collapse collapse" role="navigation">
+
+                   <?php wp_nav_menu( array(
+                    'theme_location' 	  => 'primary',
+                    'container' 		    => 'ul',
+                    'menu_class'      	=> 'navbar-nav nav'
+                    )); ?>
+
+               </div>
+
          </div>
      </header>
