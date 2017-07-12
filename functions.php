@@ -86,17 +86,21 @@ function create_posttype() {
       'supports' => array('title', 'thumbnail')
     )
   );
-  register_post_type ( 'logos',
-    array(
-      'labels' => array(
-          'name' => __('Logo'),
-          'singular_name' => __('LogoImage')
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array( 'slug' => 'logos'),
-      'supports' => array('title', 'thumbnail')
-    )
-  );
 }
 add_action( 'init', 'create_posttype' );
+
+// Add custom logo support to 'Appearance'
+
+add_theme_support( 'custom-logo' );
+
+function simple_bootstrap_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'simple_bootstrap_custom_logo_setup' );
