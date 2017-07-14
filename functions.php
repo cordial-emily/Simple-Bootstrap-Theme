@@ -24,36 +24,39 @@ function register_simplebootstrap_menus() {
 add_action('init', 'register_simplebootstrap_menus');
 
 
-/********************************************************/
-// Adding Dashicons in WordPress Front-end
-/********************************************************/
-add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
-function load_dashicons_front_end() {
-  wp_enqueue_style( 'dashicons' );
-}
-
 /* -------- Enabling Support for Post Thumbnails ----------*/
 add_theme_support( 'post-thumbnails' );
 
 /*------ Add Stylesheets --------- */
 
 function simple_bootstrap_scripts() {
+  // Adding Dashicons in WordPress Front-end
+
   // this loads jquery (for bootstrap, among other things)
-  wp_enqueue_script('jquery');
-  //wp_enqueue_script( 'jquery' , get_template_directory_uri() . '/assets/js/jquery-2.1.0.min.js', false, '2.1.0' );
+  wp_enqueue_script('jquery', get_stylesheet_uri(), 'dashicons' );
+  wp_enqueue_script( 'jquery' , get_template_directory_uri() . '/assets/js/jquery-2.1.0.min.js', false, '2.1.0' );
   wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery-1.9.1.min.js', false, '1.9.1' );
   // load boostrap
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '3.0.0', true );
+  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '3.0.0' );
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false, '3.0.0' );
   // load custom js
-  wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.9.1', true );
-  wp_enqueue_script( 'animate-shadow', get_template_directory_uri() . '/assets/js/jquery.animate-shadow-min.js', false, '1.0.0' );
+  wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.9.1');
+  //wp_enqueue_script( 'animate-shadow', get_template_directory_uri() . '/assets/js/jquery.animate-shadow-min.js', false, '1.0.0' );
   // enqueue main Stylesheets
-  wp_enqueue_style('simple_bootstrap_styles', get_stylesheet_uri() );
+  wp_register_style('simple_bootstrap_styles', get_stylesheet_uri(), array( 'bootstrap' ), '3.0.0' );
+	wp_enqueue_style( 'simple_bootstrap_styles' );
+
 }
 add_action('wp_enqueue_scripts', 'simple_bootstrap_scripts');
+
+
+
+
 // Register Custom Navigation Walker
 require_once('WP_Bootstrap_Navwalker.php');
+
+
+
 
 /* ------ register widget areas ---------*/
 

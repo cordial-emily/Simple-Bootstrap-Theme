@@ -7,12 +7,9 @@
      <meta charset="utf-8">
  <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Include bootstrap CSS -->
 
-
-     <link href="<?php bloginfo('template_url') ?>/style.css" rel="stylesheet">
      <!-- Favicons -->
- <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+ <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>images/icons/favicon.ico" type="image/x-icon">
  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
      <!--[if gte IE 9]>
    <style type="text/css">
