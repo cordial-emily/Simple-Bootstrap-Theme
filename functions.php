@@ -29,7 +29,7 @@ add_theme_support( 'post-thumbnails' );
 
 /*------ Add Stylesheets --------- */
 
-function simple_bootstrap_scripts() {
+function simple_bootstrap_depend_scripts() {
   // Adding Dashicons in WordPress Front-end
 
   // this loads jquery (for bootstrap, among other things)
@@ -38,16 +38,23 @@ function simple_bootstrap_scripts() {
   wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery-1.9.1.min.js', false, '1.9.1' );
   // load boostrap
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), '3.0.0' );
-  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false, '3.0.0' );
+  wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', '3.0.0' );
   // load custom js
   wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.9.1');
   //wp_enqueue_script( 'animate-shadow', get_template_directory_uri() . '/assets/js/jquery.animate-shadow-min.js', false, '1.0.0' );
   // enqueue main Stylesheets
-  wp_register_style('simple_bootstrap_styles', get_stylesheet_uri(), array( 'bootstrap' ), '3.0.0' );
-	wp_enqueue_style( 'simple_bootstrap_styles' );
+  //wp_register_style('simple_bootstrap_styles', get_stylesheet_uri(), array( 'bootstrap' ), '3.0.0' );
+	//wp_enqueue_style( 'simple_bootstrap_styles' );
 
 }
-add_action('wp_enqueue_scripts', 'simple_bootstrap_scripts');
+add_action('wp_enqueue_scripts', 'simple_bootstrap_depend_scripts', 1);
+
+function simple_bootstrap_scripts() {
+  // enqueue main Stylesheets
+  wp_register_style('simple_bootstrap_styles', get_stylesheet_uri(), array( 'bootstrap' ), '3.0.0' );
+  wp_enqueue_style( 'simple_bootstrap_styles' );
+}
+add_action('wp_enqueue_scripts', 'simple_bootstrap_scripts', 99);
 
 
 
