@@ -31,7 +31,7 @@ add_theme_support( 'post-thumbnails' );
 
 function simple_bootstrap_depend_scripts() {
   // Adding Dashicons in WordPress Front-end
-
+  wp_enqueue_style( 'dashicons' );
   // this loads jquery (for bootstrap, among other things)
   wp_enqueue_script('jquery', get_stylesheet_uri(), 'dashicons' );
   wp_enqueue_script( 'jquery' , get_template_directory_uri() . '/assets/js/jquery-2.1.0.min.js', false, '2.1.0' );
