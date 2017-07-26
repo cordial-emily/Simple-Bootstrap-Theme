@@ -10,6 +10,7 @@
 
      <!-- Favicons -->
  <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>images/icons/favicon.ico" type="image/x-icon">
+ <meta name="description" content="<?php bloginfo('description'); ?>" />
  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
      <!--[if gte IE 9]>
    <style type="text/css">
