@@ -11,7 +11,14 @@
      <!-- Favicons -->
  <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>images/icons/favicon.ico" type="image/x-icon">
 
- 
+   <!-- Meta tags -->
+  <meta property="og:title" content="<?php bloginfo('name') ?>">
+  <meta property="og:description" content="<?php bloginfo('description') ?>">
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/parallel-banner-graphic.1.png">
+  <meta property="og:url" content="<?php bloginfo('wpurl') ?>">
+  <meta name="twitter:card" content="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/parallel-banner-graphic.1.png">
+
+
      <!--[if gte IE 9]>
    <style type="text/css">
      .gradient {
