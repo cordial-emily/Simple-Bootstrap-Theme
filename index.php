@@ -5,7 +5,9 @@
  ?>
 
  <div class="main-content-width-wrapper">
-     <div class="two-column-entry">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-9 main-content">
          <h1><?php echo get_the_title() ?></h1>
 
          <main class="main-content">
@@ -20,7 +22,9 @@
 
             ?>
          </main>
-     </div>
+      </div>
+    </div>
+   </div>
  </div>
 
  <?php get_footer(); ?>
