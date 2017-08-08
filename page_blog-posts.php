@@ -7,7 +7,7 @@
    <div class="bs-docs-featurette main-content-width-wrapper">
     <div class="container">
       <h2 class="bs-docs-featurette-title"><?php echo get_the_title(); ?></h2>
-      
+
       <div class="row">
         <div class="col-sm-9 main-content">
 
@@ -18,7 +18,7 @@
       array(
           'post_type'      => 'post',
           'order_by'       => 'post_id',
-          'order'          => 'ASC',
+          'order'          => 'DESC',
           'post_status'    => 'publish',
           'posts_per_page' => 100
       )
