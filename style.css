@@ -66,6 +66,7 @@ audio:not([controls]) {
     display: none;
     height: 0;
 }
+ul { list-style-type: none; }
 
 [hidden],
 template {
@@ -283,7 +284,7 @@ h2.middletitle { padding-bottom:10px;text-align:center; }
 /* footer */
 footer#footer { background-color:#333; }
 footer#footer .row p.text-center { color: #fff; }
-footer#footer h4 { position:relative;display: block;padding: 15px 15px 10px; color: #fff;}
+footer#footer h4 { position: relative; display: block; padding: 15px 15px 10px; color: #fff;}
 
 /*--- cv education section ------------*/
 .container.bea_border.cv .port-img { width: 80%;}
