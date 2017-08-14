@@ -29,6 +29,8 @@
 <?php while ($loop -> have_posts()): $loop -> the_post(); ?>
 <div class="jumbotron">
   <h1><?php the_title(); ?></h1>
+  <small class="text-muted"><span class="dashicons dashicons-clock"></span>&nbsp;<?php echo get_the_date( 'Y-m-d' ); ?></small>
+  <hr>
   <p><?php the_content(); ?></p>
 </div>
 

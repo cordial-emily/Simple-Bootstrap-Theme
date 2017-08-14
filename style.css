@@ -477,6 +477,10 @@ ul.nav.nav-pills.nav-stacked.social li p a span.dashicons {
 .bottom .nav-pills>li>a {
     font-weight: 600;
 }
+/* page_blog-posts */
+span.dashicons.dashicons-clock {
+    margin: -2px;
+}
 
 
 /*------------------- MEDIA QUERIES ----------------------*/
