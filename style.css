@@ -84,6 +84,11 @@ p {
 .bs-docs-featurette.main-content-width-wrapper {
     background-color: #ded5c5;
 }
+img.img-fluid {
+    width: initial;
+    max-width: 100%;
+    height: auto;
+}
 
 /* ---------- navigation -----------*/
 .top { background-color: #ffffff; }
@@ -480,6 +485,14 @@ ul.nav.nav-pills.nav-stacked.social li p a span.dashicons {
 /* page_blog-posts */
 span.dashicons.dashicons-clock {
     margin: -2px;
+}
+.nav-next {
+    width: 45%;
+    float: left;
+}
+.nav-previous {
+    width: 45%;
+    float: left;
 }
 
 
