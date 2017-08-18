@@ -13,7 +13,7 @@ get_header();
               <div class="row">
                   <div class="col-md-12">
                     <br>
-                    <h2>WEB PORTFOLIO</h2>
+                    <h2 class="text-center">WEB PORTFOLIO</h2>
                     <br>
                   </div><!--col-md-12-->
 
