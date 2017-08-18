@@ -10,7 +10,7 @@
 
       <div class="row">
         <div class="col-sm-9 main-content">
-          <img style="display: block; margin: 0 auto;" src="<?php bloginfo('template_url') ?>/images/icons/Blog.png" alt="Parallel Design Blog" width="150px" >
+          <img style="display: block; margin: 0 auto;" src="<?php bloginfo('template_url') ?>/images/icons/Blog.1.png" alt="Parallel Design Blog" width="150px" >
 
           <?php wp_reset_query(); ?>
 <?php
