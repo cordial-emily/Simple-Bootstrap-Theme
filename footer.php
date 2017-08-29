@@ -9,8 +9,7 @@
                 <br>
                 </br>
                 <h3>Get to know us</h3>
-                <br>
-                <ul class="nav nav-pills nav-stacked social">
+                <ul class="nav nav-pills nav-stacked social social-menu">
                   <li><p><a href="https://twitter.com/ContactParallel"><span class="dashicons dashicons-twitter"></span></a>
                          <a href="https://www.facebook.com/mindfulcomputing/"><span class="dashicons dashicons-facebook"></span></a>
                          <a href=""><span class="dashicons dashicons-rss"></span></a>

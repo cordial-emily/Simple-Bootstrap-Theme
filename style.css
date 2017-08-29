@@ -475,6 +475,9 @@ button.btn.btn-primary.web:hover {
 
 }
 /* footer */
+ul.nav.nav-pills.nav-stacked.social.social-menu {
+    margin-top: 1.2em;
+}
 ul.nav.nav-pills.nav-stacked.social li p a span.dashicons {
   font-size: 3em;
   margin-right: 30px;
